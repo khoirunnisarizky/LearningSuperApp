@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import SwiftUI
+import CoreData
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -16,7 +18,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        let context = persistentContainer.viewContext
+        let contentView = Profile(viewModel: ProfileViewModel()).environment(\.managedObjectContext, context)
+
+        if let windowScene = scene as? UIWindowScene {
+          let window = UIWindow(windowScene: windowScene)
+          window.rootViewController = UIHostingController(rootView: contentView)
+          self.window = window
+          window.makeKeyAndVisible()
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
@@ -45,7 +55,43 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
+        saveContext()
     }
+    
+    // TODO: Set up core data
+    // 1
+    lazy var persistentContainer: NSPersistentContainer = {
+      // 2
+      let container = NSPersistentContainer(name: "User")
+      // 3
+      container.loadPersistentStores { _, error in
+        // 4
+        if let error = error as NSError? {
+          // You should add your own error handling code here.
+          fatalError("Unresolved error \(error), \(error.userInfo)")
+        }
+      }
+      return container
+    }()
+
+    func saveContext() {
+      // 1
+      let context = persistentContainer.viewContext
+      // 2
+      if context.hasChanges {
+        do {
+          // 3
+          try context.save()
+        } catch {
+          // 4
+          // The context couldn't be saved.
+          // You should add your own error handling here.
+          let nserror = error as NSError
+          fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+        }
+      }
+    }
+
 
 
 }

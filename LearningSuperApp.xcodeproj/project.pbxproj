@@ -10,19 +10,21 @@
 		13729403DCBB46D6F5BBDCCB /* Pods_LearningSuperApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF28325D2E6327CC23E32FF /* Pods_LearningSuperApp.framework */; };
 		4E93C3BE28891B3E00151262 /* PieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E93C3BD28891B3E00151262 /* PieViewController.swift */; };
 		4E93C3C028891B4B00151262 /* LineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E93C3BF28891B4B00151262 /* LineViewController.swift */; };
+		4E93C3C72890231B00151262 /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E93C3C52890231B00151262 /* User.xcdatamodeld */; };
 		4EF2597F2889102300A9BE26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF2597E2889102300A9BE26 /* AppDelegate.swift */; };
 		4EF259812889102300A9BE26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF259802889102300A9BE26 /* SceneDelegate.swift */; };
 		4EF259832889102300A9BE26 /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF259822889102300A9BE26 /* BarViewController.swift */; };
 		4EF259862889102300A9BE26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF259842889102300A9BE26 /* Main.storyboard */; };
 		4EF259882889102500A9BE26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF259872889102500A9BE26 /* Assets.xcassets */; };
 		4EF2598B2889102500A9BE26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF259892889102500A9BE26 /* LaunchScreen.storyboard */; };
-		4EF25993288912E200A9BE26 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF25992288912E200A9BE26 /* ChartView.swift */; };
+		4EF25993288912E200A9BE26 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF25992288912E200A9BE26 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14A2BA923DAD7ECA61917572 /* Pods-LearningSuperApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningSuperApp.release.xcconfig"; path = "Target Support Files/Pods-LearningSuperApp/Pods-LearningSuperApp.release.xcconfig"; sourceTree = "<group>"; };
 		4E93C3BD28891B3E00151262 /* PieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieViewController.swift; sourceTree = "<group>"; };
 		4E93C3BF28891B4B00151262 /* LineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineViewController.swift; sourceTree = "<group>"; };
+		4E93C3C62890231B00151262 /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
 		4EF2597B2889102300A9BE26 /* LearningSuperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningSuperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EF2597E2889102300A9BE26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EF259802889102300A9BE26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,7 +33,7 @@
 		4EF259872889102500A9BE26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EF2598A2889102500A9BE26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EF2598C2889102500A9BE26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4EF25992288912E200A9BE26 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		4EF25992288912E200A9BE26 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		6FF28325D2E6327CC23E32FF /* Pods_LearningSuperApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningSuperApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D16A9FEFDAC09A1189E5E4 /* Pods-LearningSuperApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningSuperApp.debug.xcconfig"; path = "Target Support Files/Pods-LearningSuperApp/Pods-LearningSuperApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,7 +71,8 @@
 			children = (
 				4EF259892889102500A9BE26 /* LaunchScreen.storyboard */,
 				4EF259842889102300A9BE26 /* Main.storyboard */,
-				4EF25992288912E200A9BE26 /* ChartView.swift */,
+				4EF25992288912E200A9BE26 /* Profile.swift */,
+				4E93C3C52890231B00151262 /* User.xcdatamodeld */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,8 +254,9 @@
 				4EF2597F2889102300A9BE26 /* AppDelegate.swift in Sources */,
 				4E93C3C028891B4B00151262 /* LineViewController.swift in Sources */,
 				4EF259812889102300A9BE26 /* SceneDelegate.swift in Sources */,
+				4E93C3C72890231B00151262 /* User.xcdatamodeld in Sources */,
 				4E93C3BE28891B3E00151262 /* PieViewController.swift in Sources */,
-				4EF25993288912E200A9BE26 /* ChartView.swift in Sources */,
+				4EF25993288912E200A9BE26 /* Profile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +476,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4E93C3C52890231B00151262 /* User.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4E93C3C62890231B00151262 /* User.xcdatamodel */,
+			);
+			currentVersion = 4E93C3C62890231B00151262 /* User.xcdatamodel */;
+			path = User.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4EF259732889102300A9BE26 /* Project object */;
 }
