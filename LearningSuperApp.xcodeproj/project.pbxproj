@@ -59,13 +59,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		4E93C3C1288922DA00151262 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		4E93C3C2288922DF00151262 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				4E93C3C4288922F300151262 /* Delegate */,
-				4E93C3C1288922DA00151262 /* Model */,
 				4E93C3C2288922DF00151262 /* View */,
 				4E93C3C3288922E800151262 /* Controller */,
 				4EF259872889102500A9BE26 /* Assets.xcassets */,
