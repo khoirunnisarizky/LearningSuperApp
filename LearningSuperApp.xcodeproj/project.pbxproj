@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		13729403DCBB46D6F5BBDCCB /* Pods_LearningSuperApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF28325D2E6327CC23E32FF /* Pods_LearningSuperApp.framework */; };
+		4E92F4FB2890F5CD00F0740D /* View2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92F4FA2890F5CD00F0740D /* View2.swift */; };
+		4E92F4FD2890F76700F0740D /* View3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92F4FC2890F76700F0740D /* View3.swift */; };
 		4E93C3BE28891B3E00151262 /* PieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E93C3BD28891B3E00151262 /* PieViewController.swift */; };
 		4E93C3C028891B4B00151262 /* LineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E93C3BF28891B4B00151262 /* LineViewController.swift */; };
 		4E93C3C72890231B00151262 /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E93C3C52890231B00151262 /* User.xcdatamodeld */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		14A2BA923DAD7ECA61917572 /* Pods-LearningSuperApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningSuperApp.release.xcconfig"; path = "Target Support Files/Pods-LearningSuperApp/Pods-LearningSuperApp.release.xcconfig"; sourceTree = "<group>"; };
+		4E92F4FA2890F5CD00F0740D /* View2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2.swift; sourceTree = "<group>"; };
+		4E92F4FC2890F76700F0740D /* View3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View3.swift; sourceTree = "<group>"; };
 		4E93C3BD28891B3E00151262 /* PieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieViewController.swift; sourceTree = "<group>"; };
 		4E93C3BF28891B4B00151262 /* LineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineViewController.swift; sourceTree = "<group>"; };
 		4E93C3C62890231B00151262 /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 				4EF259892889102500A9BE26 /* LaunchScreen.storyboard */,
 				4EF259842889102300A9BE26 /* Main.storyboard */,
 				4EF25992288912E200A9BE26 /* Profile.swift */,
+				4E92F4FA2890F5CD00F0740D /* View2.swift */,
+				4E92F4FC2890F76700F0740D /* View3.swift */,
 				4E93C3C52890231B00151262 /* User.xcdatamodeld */,
 			);
 			path = View;
@@ -245,9 +251,11 @@
 				4EF259832889102300A9BE26 /* BarViewController.swift in Sources */,
 				4EF2597F2889102300A9BE26 /* AppDelegate.swift in Sources */,
 				4E93C3C028891B4B00151262 /* LineViewController.swift in Sources */,
+				4E92F4FB2890F5CD00F0740D /* View2.swift in Sources */,
 				4EF259812889102300A9BE26 /* SceneDelegate.swift in Sources */,
 				4E93C3C72890231B00151262 /* User.xcdatamodeld in Sources */,
 				4E93C3BE28891B3E00151262 /* PieViewController.swift in Sources */,
+				4E92F4FD2890F76700F0740D /* View3.swift in Sources */,
 				4EF25993288912E200A9BE26 /* Profile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

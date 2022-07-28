@@ -25,6 +25,7 @@ class ProfileViewModel: ObservableObject {
 struct Profile: View {
     
     @StateObject var viewModel: ProfileViewModel
+    @State var presentView2: Bool = false
     
     @Environment(\.managedObjectContext) var managedObjectContext
     
@@ -62,6 +63,16 @@ struct Profile: View {
                 .padding()
                 .frame(width: UIScreen.main.bounds.width, height: 30)
                 .foregroundColor(.blue)
+                
+                
+                NavigationLink(isActive: $presentView2) {
+                    View2()
+                } label: {
+                    Button("Next"){
+                        presentView2.toggle()
+                    }
+                }
+
             }
             .navigationTitle("Profile")
             .onAppear {
