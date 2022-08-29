@@ -73,6 +73,7 @@
                         <segue destination="gSh-ts-1de" kind="relationship" relationship="viewControllers" id="8Ib-iE-wJM"/>
                         <segue destination="kH7-3G-Oef" kind="relationship" relationship="viewControllers" id="tFu-MI-nxI"/>
                         <segue destination="Olg-DC-0Hp" kind="relationship" relationship="viewControllers" id="RTh-jh-ES9"/>
+                        <segue destination="y6A-mV-cXX" kind="relationship" relationship="viewControllers" id="xWY-ek-PLh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S9E-Eh-jYZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -97,6 +98,84 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eKS-8Y-6fa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2188" y="905"/>
+        </scene>
+        <!--Generic Table View-->
+        <scene sceneID="ZQo-dF-cl8">
+            <objects>
+                <tableViewController id="zb6-Xl-cjC" customClass="GenericTableViewController" customModule="LearningSuperApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="bYn-ZP-86N">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="firstTableViewCell" id="1A6-Hb-Vj3" customClass="FirstTableViewCell" customModule="LearningSuperApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1A6-Hb-Vj3" id="S27-PO-qjK">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="zb6-Xl-cjC" id="d5N-sE-cYz"/>
+                            <outlet property="delegate" destination="zb6-Xl-cjC" id="sIO-6i-b0C"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Generic Table View" largeTitleDisplayMode="always" id="N6B-2l-FKy"/>
+                    <connections>
+                        <segue destination="ftL-8t-cfD" kind="show" identifier="moveToDetail" id="CTE-f9-6Vo"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lGx-oh-ZIZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3904" y="905"/>
+        </scene>
+        <!--Detail-->
+        <scene sceneID="Srh-72-KKf">
+            <objects>
+                <tableViewController id="ftL-8t-cfD" customClass="DetailGenericTableViewController" customModule="LearningSuperApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="g64-2q-ZlI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="laf-Ni-EZo" customClass="DetailTableViewCell" customModule="LearningSuperApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="laf-Ni-EZo" id="ueG-G9-ODK">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ftL-8t-cfD" id="PLR-Wj-C9M"/>
+                            <outlet property="delegate" destination="ftL-8t-cfD" id="6M1-4g-xBP"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Detail" largeTitleDisplayMode="always" id="Hti-kX-Xez"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mm9-hJ-tmQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4775" y="905"/>
+        </scene>
+        <!--Generic-->
+        <scene sceneID="cjj-7l-mGt">
+            <objects>
+                <navigationController id="y6A-mV-cXX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Generic" image="tablecells.badge.ellipsis.fill" catalog="system" id="PUl-8c-edL"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="S0f-St-rQD">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="zb6-Xl-cjC" kind="relationship" relationship="rootViewController" id="glF-hu-UxV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qZd-Ll-gIK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3014" y="905"/>
         </scene>
         <!--Line-->
         <scene sceneID="feM-hw-CPR">
@@ -141,6 +220,7 @@
         <image name="books.vertical.circle" catalog="system" width="128" height="121"/>
         <image name="chart.bar.doc.horizontal.fill" catalog="system" width="115" height="128"/>
         <image name="line.diagonal.arrow" catalog="system" width="128" height="113"/>
+        <image name="tablecells.badge.ellipsis.fill" catalog="system" width="128" height="91"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
