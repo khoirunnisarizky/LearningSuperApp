@@ -108,7 +108,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7s-9x-aIW">
-                                <rect key="frame" x="90" y="573" width="234" height="49"/>
+                                <rect key="frame" x="20" y="591" width="374" height="31"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -134,11 +134,10 @@
                         <viewLayoutGuide key="safeArea" id="Gjz-7t-Ebk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Gjz-7t-Ebk" firstAttribute="bottom" secondItem="l7s-9x-aIW" secondAttribute="bottom" constant="191" id="C5t-YJ-HqV"/>
-                            <constraint firstItem="l7s-9x-aIW" firstAttribute="leading" secondItem="Gjz-7t-Ebk" secondAttribute="leading" constant="90" id="GHQ-Vo-Gat"/>
-                            <constraint firstItem="l7s-9x-aIW" firstAttribute="centerX" secondItem="mHu-Kh-kRs" secondAttribute="centerX" id="LFQ-HI-QP0"/>
-                            <constraint firstItem="l7s-9x-aIW" firstAttribute="top" secondItem="mHu-Kh-kRs" secondAttribute="bottom" constant="58" id="Z4s-bP-5LH"/>
+                            <constraint firstItem="Gjz-7t-Ebk" firstAttribute="trailing" secondItem="l7s-9x-aIW" secondAttribute="trailing" constant="20" id="1jl-Lt-u8X"/>
+                            <constraint firstItem="l7s-9x-aIW" firstAttribute="leading" secondItem="Gjz-7t-Ebk" secondAttribute="leading" constant="20" id="WLe-mz-baM"/>
                             <constraint firstItem="mHu-Kh-kRs" firstAttribute="centerX" secondItem="NCB-8e-qR6" secondAttribute="centerX" id="bNn-cj-u7T"/>
+                            <constraint firstItem="Gjz-7t-Ebk" firstAttribute="bottom" secondItem="l7s-9x-aIW" secondAttribute="bottom" constant="191" id="bfB-PY-pQg"/>
                             <constraint firstItem="mHu-Kh-kRs" firstAttribute="top" secondItem="Gjz-7t-Ebk" secondAttribute="top" constant="135" id="d9P-Me-sV5"/>
                         </constraints>
                     </view>
