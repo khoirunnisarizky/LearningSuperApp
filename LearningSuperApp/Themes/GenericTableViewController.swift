@@ -25,6 +25,12 @@ class GenericTableViewController<T, Cell: UITableViewCell>: UITableViewControlle
     }
 
     // MARK: - Table view data source
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        if items.count != 1 {
+            return 1
+        }
+        return items.count + 1
+    }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
@@ -35,6 +41,7 @@ class GenericTableViewController<T, Cell: UITableViewCell>: UITableViewControlle
         // Use of generics
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! Cell
         let item = items[indexPath.row]
+        cell.tag = indexPath.section
         configure(cell, item)
         return cell
     }
