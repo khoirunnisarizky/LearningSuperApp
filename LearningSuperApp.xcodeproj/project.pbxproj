@@ -8,13 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		13729403DCBB46D6F5BBDCCB /* Pods_LearningSuperApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF28325D2E6327CC23E32FF /* Pods_LearningSuperApp.framework */; };
+		4E369ED128BF114E002AEFC3 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E369ED028BF114E002AEFC3 /* ListViewController.swift */; };
 		4E41171728BC491400E80CC7 /* GenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E41171628BC491400E80CC7 /* GenericTableViewController.swift */; };
-		4E41171A28BC4D1800E80CC7 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E41171828BC4D1800E80CC7 /* FirstTableViewCell.swift */; };
-		4E41171B28BC4D1900E80CC7 /* FirstTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E41171928BC4D1800E80CC7 /* FirstTableViewCell.xib */; };
-		4E41171D28BC656700E80CC7 /* DetailGenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E41171C28BC656700E80CC7 /* DetailGenericTableViewController.swift */; };
-		4E41172028BC65C400E80CC7 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E41171E28BC65C400E80CC7 /* DetailTableViewCell.swift */; };
-		4E41172128BC65C400E80CC7 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E41171F28BC65C400E80CC7 /* DetailTableViewCell.xib */; };
 		4E41172428BC6B5E00E80CC7 /* Mentors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E41172328BC6B5E00E80CC7 /* Mentors.swift */; };
+		4E8F8DEC28C0BB8A0006D38C /* MentorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F8DEB28C0BB8A0006D38C /* MentorTableViewCell.swift */; };
 		4E92F4FB2890F5CD00F0740D /* View2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92F4FA2890F5CD00F0740D /* View2.swift */; };
 		4E92F4FD2890F76700F0740D /* View3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E92F4FC2890F76700F0740D /* View3.swift */; };
 		4E93C3BE28891B3E00151262 /* PieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E93C3BD28891B3E00151262 /* PieViewController.swift */; };
@@ -31,13 +28,10 @@
 
 /* Begin PBXFileReference section */
 		14A2BA923DAD7ECA61917572 /* Pods-LearningSuperApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningSuperApp.release.xcconfig"; path = "Target Support Files/Pods-LearningSuperApp/Pods-LearningSuperApp.release.xcconfig"; sourceTree = "<group>"; };
+		4E369ED028BF114E002AEFC3 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		4E41171628BC491400E80CC7 /* GenericTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewController.swift; sourceTree = "<group>"; };
-		4E41171828BC4D1800E80CC7 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
-		4E41171928BC4D1800E80CC7 /* FirstTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FirstTableViewCell.xib; sourceTree = "<group>"; };
-		4E41171C28BC656700E80CC7 /* DetailGenericTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGenericTableViewController.swift; sourceTree = "<group>"; };
-		4E41171E28BC65C400E80CC7 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
-		4E41171F28BC65C400E80CC7 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
 		4E41172328BC6B5E00E80CC7 /* Mentors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mentors.swift; sourceTree = "<group>"; };
+		4E8F8DEB28C0BB8A0006D38C /* MentorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorTableViewCell.swift; sourceTree = "<group>"; };
 		4E92F4FA2890F5CD00F0740D /* View2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2.swift; sourceTree = "<group>"; };
 		4E92F4FC2890F76700F0740D /* View3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View3.swift; sourceTree = "<group>"; };
 		4E93C3BD28891B3E00151262 /* PieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieViewController.swift; sourceTree = "<group>"; };
@@ -89,12 +83,17 @@
 		4E41172528BC70CE00E80CC7 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				4E41171E28BC65C400E80CC7 /* DetailTableViewCell.swift */,
-				4E41171F28BC65C400E80CC7 /* DetailTableViewCell.xib */,
-				4E41171928BC4D1800E80CC7 /* FirstTableViewCell.xib */,
-				4E41171828BC4D1800E80CC7 /* FirstTableViewCell.swift */,
+				4E8F8DEB28C0BB8A0006D38C /* MentorTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		4E8F8DED28C0BC130006D38C /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				4E41171628BC491400E80CC7 /* GenericTableViewController.swift */,
+			);
+			path = Themes;
 			sourceTree = "<group>";
 		};
 		4E93C3C2288922DF00151262 /* View */ = {
@@ -116,8 +115,7 @@
 				4EF259822889102300A9BE26 /* BarViewController.swift */,
 				4E93C3BF28891B4B00151262 /* LineViewController.swift */,
 				4E93C3BD28891B3E00151262 /* PieViewController.swift */,
-				4E41171C28BC656700E80CC7 /* DetailGenericTableViewController.swift */,
-				4E41171628BC491400E80CC7 /* GenericTableViewController.swift */,
+				4E369ED028BF114E002AEFC3 /* ListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -152,6 +150,7 @@
 		4EF2597D2889102300A9BE26 /* LearningSuperApp */ = {
 			isa = PBXGroup;
 			children = (
+				4E8F8DED28C0BC130006D38C /* Themes */,
 				4E41172228BC6B5200E80CC7 /* Model */,
 				4E93C3C4288922F300151262 /* Delegate */,
 				4E93C3C2288922DF00151262 /* View */,
@@ -231,9 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EF2598B2889102500A9BE26 /* LaunchScreen.storyboard in Resources */,
-				4E41172128BC65C400E80CC7 /* DetailTableViewCell.xib in Resources */,
 				4EF259882889102500A9BE26 /* Assets.xcassets in Resources */,
-				4E41171B28BC4D1900E80CC7 /* FirstTableViewCell.xib in Resources */,
 				4EF259862889102300A9BE26 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,17 +284,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E41171D28BC656700E80CC7 /* DetailGenericTableViewController.swift in Sources */,
 				4E41171728BC491400E80CC7 /* GenericTableViewController.swift in Sources */,
 				4EF259832889102300A9BE26 /* BarViewController.swift in Sources */,
-				4E41172028BC65C400E80CC7 /* DetailTableViewCell.swift in Sources */,
 				4EF2597F2889102300A9BE26 /* AppDelegate.swift in Sources */,
 				4E93C3C028891B4B00151262 /* LineViewController.swift in Sources */,
+				4E369ED128BF114E002AEFC3 /* ListViewController.swift in Sources */,
 				4E92F4FB2890F5CD00F0740D /* View2.swift in Sources */,
 				4EF259812889102300A9BE26 /* SceneDelegate.swift in Sources */,
 				4E93C3C72890231B00151262 /* User.xcdatamodeld in Sources */,
 				4E93C3BE28891B3E00151262 /* PieViewController.swift in Sources */,
-				4E41171A28BC4D1800E80CC7 /* FirstTableViewCell.swift in Sources */,
+				4E8F8DEC28C0BB8A0006D38C /* MentorTableViewCell.swift in Sources */,
 				4E92F4FD2890F76700F0740D /* View3.swift in Sources */,
 				4E41172428BC6B5E00E80CC7 /* Mentors.swift in Sources */,
 				4EF25993288912E200A9BE26 /* Profile.swift in Sources */,
