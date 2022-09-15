@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		13729403DCBB46D6F5BBDCCB /* Pods_LearningSuperApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF28325D2E6327CC23E32FF /* Pods_LearningSuperApp.framework */; };
+		4E12344628D1A17700DB8931 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12344528D1A17700DB8931 /* TabBarViewController.swift */; };
 		4E369ED128BF114E002AEFC3 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E369ED028BF114E002AEFC3 /* ListViewController.swift */; };
 		4E41171728BC491400E80CC7 /* GenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E41171628BC491400E80CC7 /* GenericTableViewController.swift */; };
 		4E41172428BC6B5E00E80CC7 /* Mentors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E41172328BC6B5E00E80CC7 /* Mentors.swift */; };
@@ -28,6 +29,7 @@
 
 /* Begin PBXFileReference section */
 		14A2BA923DAD7ECA61917572 /* Pods-LearningSuperApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningSuperApp.release.xcconfig"; path = "Target Support Files/Pods-LearningSuperApp/Pods-LearningSuperApp.release.xcconfig"; sourceTree = "<group>"; };
+		4E12344528D1A17700DB8931 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		4E369ED028BF114E002AEFC3 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		4E41171628BC491400E80CC7 /* GenericTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewController.swift; sourceTree = "<group>"; };
 		4E41172328BC6B5E00E80CC7 /* Mentors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mentors.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				4E93C3BF28891B4B00151262 /* LineViewController.swift */,
 				4E93C3BD28891B3E00151262 /* PieViewController.swift */,
 				4E369ED028BF114E002AEFC3 /* ListViewController.swift */,
+				4E12344528D1A17700DB8931 /* TabBarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				4E8F8DEC28C0BB8A0006D38C /* MentorTableViewCell.swift in Sources */,
 				4E92F4FD2890F76700F0740D /* View3.swift in Sources */,
 				4E41172428BC6B5E00E80CC7 /* Mentors.swift in Sources */,
+				4E12344628D1A17700DB8931 /* TabBarViewController.swift in Sources */,
 				4EF25993288912E200A9BE26 /* Profile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
