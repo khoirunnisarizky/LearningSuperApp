@@ -8,7 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		13729403DCBB46D6F5BBDCCB /* Pods_LearningSuperApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FF28325D2E6327CC23E32FF /* Pods_LearningSuperApp.framework */; };
-		4E369ED128BF114E002AEFC3 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E369ED028BF114E002AEFC3 /* ListViewController.swift */; };
+		4E12344628D1A17700DB8931 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12344528D1A17700DB8931 /* TabBarViewController.swift */; };
+		4E12347128D720EC00DB8931 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12347028D720EC00DB8931 /* ProfileView.swift */; };
+		4E12347328D7217900DB8931 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12347228D7217900DB8931 /* ResultView.swift */; };
+		4E12347528D721B800DB8931 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12347428D721B800DB8931 /* ProfileViewModel.swift */; };
+		4E12347728D722B800DB8931 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12347628D722B800DB8931 /* LoginView.swift */; };
+		4E12347928D7232300DB8931 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12347828D7232300DB8931 /* LoginViewController.swift */; };
+		4E12347B28D724D000DB8931 /* DynamicOnBoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12347A28D724D000DB8931 /* DynamicOnBoardingVC.swift */; };
+		4E12347F28D725AA00DB8931 /* SwiftUIPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12347E28D725AA00DB8931 /* SwiftUIPreview.swift */; };
 		4E41171728BC491400E80CC7 /* GenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E41171628BC491400E80CC7 /* GenericTableViewController.swift */; };
 		4E41172428BC6B5E00E80CC7 /* Mentors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E41172328BC6B5E00E80CC7 /* Mentors.swift */; };
 		4E8F8DEC28C0BB8A0006D38C /* MentorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F8DEB28C0BB8A0006D38C /* MentorTableViewCell.swift */; };
@@ -23,12 +30,18 @@
 		4EF259862889102300A9BE26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF259842889102300A9BE26 /* Main.storyboard */; };
 		4EF259882889102500A9BE26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF259872889102500A9BE26 /* Assets.xcassets */; };
 		4EF2598B2889102500A9BE26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF259892889102500A9BE26 /* LaunchScreen.storyboard */; };
-		4EF25993288912E200A9BE26 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF25992288912E200A9BE26 /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		14A2BA923DAD7ECA61917572 /* Pods-LearningSuperApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningSuperApp.release.xcconfig"; path = "Target Support Files/Pods-LearningSuperApp/Pods-LearningSuperApp.release.xcconfig"; sourceTree = "<group>"; };
-		4E369ED028BF114E002AEFC3 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		4E12344528D1A17700DB8931 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		4E12347028D720EC00DB8931 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		4E12347228D7217900DB8931 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		4E12347428D721B800DB8931 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		4E12347628D722B800DB8931 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4E12347828D7232300DB8931 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4E12347A28D724D000DB8931 /* DynamicOnBoardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicOnBoardingVC.swift; sourceTree = "<group>"; };
+		4E12347E28D725AA00DB8931 /* SwiftUIPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPreview.swift; sourceTree = "<group>"; };
 		4E41171628BC491400E80CC7 /* GenericTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewController.swift; sourceTree = "<group>"; };
 		4E41172328BC6B5E00E80CC7 /* Mentors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mentors.swift; sourceTree = "<group>"; };
 		4E8F8DEB28C0BB8A0006D38C /* MentorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorTableViewCell.swift; sourceTree = "<group>"; };
@@ -45,7 +58,6 @@
 		4EF259872889102500A9BE26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EF2598A2889102500A9BE26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EF2598C2889102500A9BE26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4EF25992288912E200A9BE26 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		6FF28325D2E6327CC23E32FF /* Pods_LearningSuperApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningSuperApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D16A9FEFDAC09A1189E5E4 /* Pods-LearningSuperApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningSuperApp.debug.xcconfig"; path = "Target Support Files/Pods-LearningSuperApp/Pods-LearningSuperApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,6 +81,32 @@
 				14A2BA923DAD7ECA61917572 /* Pods-LearningSuperApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		4E12346F28D7208A00DB8931 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				4E12347428D721B800DB8931 /* ProfileViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		4E12347C28D724DF00DB8931 /* Chart Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4EF259822889102300A9BE26 /* BarViewController.swift */,
+				4E93C3BF28891B4B00151262 /* LineViewController.swift */,
+				4E93C3BD28891B3E00151262 /* PieViewController.swift */,
+			);
+			path = "Chart Controller";
+			sourceTree = "<group>";
+		};
+		4E12347D28D7258C00DB8931 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4E12347E28D725AA00DB8931 /* SwiftUIPreview.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		4E41172228BC6B5200E80CC7 /* Model */ = {
@@ -102,9 +140,11 @@
 				4EF259892889102500A9BE26 /* LaunchScreen.storyboard */,
 				4EF259842889102300A9BE26 /* Main.storyboard */,
 				4E41172528BC70CE00E80CC7 /* Cells */,
-				4EF25992288912E200A9BE26 /* Profile.swift */,
 				4E92F4FA2890F5CD00F0740D /* View2.swift */,
 				4E92F4FC2890F76700F0740D /* View3.swift */,
+				4E12347028D720EC00DB8931 /* ProfileView.swift */,
+				4E12347228D7217900DB8931 /* ResultView.swift */,
+				4E12347628D722B800DB8931 /* LoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -112,10 +152,10 @@
 		4E93C3C3288922E800151262 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				4EF259822889102300A9BE26 /* BarViewController.swift */,
-				4E93C3BF28891B4B00151262 /* LineViewController.swift */,
-				4E93C3BD28891B3E00151262 /* PieViewController.swift */,
-				4E369ED028BF114E002AEFC3 /* ListViewController.swift */,
+				4E12344528D1A17700DB8931 /* TabBarViewController.swift */,
+				4E12347C28D724DF00DB8931 /* Chart Controller */,
+				4E12347828D7232300DB8931 /* LoginViewController.swift */,
+				4E12347A28D724D000DB8931 /* DynamicOnBoardingVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -150,10 +190,12 @@
 		4EF2597D2889102300A9BE26 /* LearningSuperApp */ = {
 			isa = PBXGroup;
 			children = (
+				4E12347D28D7258C00DB8931 /* Helper */,
 				4E8F8DED28C0BC130006D38C /* Themes */,
 				4E41172228BC6B5200E80CC7 /* Model */,
 				4E93C3C4288922F300151262 /* Delegate */,
 				4E93C3C2288922DF00151262 /* View */,
+				4E12346F28D7208A00DB8931 /* View Model */,
 				4E93C3C3288922E800151262 /* Controller */,
 				4EF259872889102500A9BE26 /* Assets.xcassets */,
 				4EF2598C2889102500A9BE26 /* Info.plist */,
@@ -286,9 +328,9 @@
 			files = (
 				4E41171728BC491400E80CC7 /* GenericTableViewController.swift in Sources */,
 				4EF259832889102300A9BE26 /* BarViewController.swift in Sources */,
+				4E12347328D7217900DB8931 /* ResultView.swift in Sources */,
 				4EF2597F2889102300A9BE26 /* AppDelegate.swift in Sources */,
 				4E93C3C028891B4B00151262 /* LineViewController.swift in Sources */,
-				4E369ED128BF114E002AEFC3 /* ListViewController.swift in Sources */,
 				4E92F4FB2890F5CD00F0740D /* View2.swift in Sources */,
 				4EF259812889102300A9BE26 /* SceneDelegate.swift in Sources */,
 				4E93C3C72890231B00151262 /* User.xcdatamodeld in Sources */,
@@ -296,7 +338,13 @@
 				4E8F8DEC28C0BB8A0006D38C /* MentorTableViewCell.swift in Sources */,
 				4E92F4FD2890F76700F0740D /* View3.swift in Sources */,
 				4E41172428BC6B5E00E80CC7 /* Mentors.swift in Sources */,
-				4EF25993288912E200A9BE26 /* Profile.swift in Sources */,
+				4E12347F28D725AA00DB8931 /* SwiftUIPreview.swift in Sources */,
+				4E12344628D1A17700DB8931 /* TabBarViewController.swift in Sources */,
+				4E12347B28D724D000DB8931 /* DynamicOnBoardingVC.swift in Sources */,
+				4E12347928D7232300DB8931 /* LoginViewController.swift in Sources */,
+				4E12347128D720EC00DB8931 /* ProfileView.swift in Sources */,
+				4E12347728D722B800DB8931 /* LoginView.swift in Sources */,
+				4E12347528D721B800DB8931 /* ProfileViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
