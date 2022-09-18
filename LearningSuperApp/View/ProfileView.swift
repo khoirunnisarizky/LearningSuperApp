@@ -1,28 +1,13 @@
 //
-//  ContentView.swift
-//  test
+//  ProfileView.swift
+//  LearningSuperApp
 //
-//  Created by khoirunnisa' rizky noor fatimah on 20/07/22.
+//  Created by khoirunnisa' rizky noor fatimah on 18/09/22.
 //
 
 import SwiftUI
 
-class ProfileViewModel: ObservableObject {
-    @Published var firstName: String = ""
-    @Published var lastName: String = ""
-    @Published var age: String = ""
-    @Published var isAgeShowing = false
-    
-    func stateFullName() -> String {
-        "My name is \(firstName) \(lastName). "
-    }
-    
-    func stateAge() -> String {
-        isAgeShowing ? "I am \(age) years old" : ""
-    }
-}
-
-struct Profile: View {
+struct ProfileView: View {
     
     @StateObject var viewModel: ProfileViewModel
     @State var presentView2: Bool = false
@@ -72,7 +57,7 @@ struct Profile: View {
                         presentView2.toggle()
                     }
                 }
-
+                
             }
             .navigationTitle("Profile")
             .onAppear {
@@ -108,26 +93,12 @@ struct Profile: View {
             saveContext()
         }
     }
-    
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            Profile(viewModel: ProfileViewModel())
-        }
-    }
-}
-
-struct ResultView: View {
-    
-    @ObservedObject var viewModel: ProfileViewModel
-    
-    var body: some View {
-        Section {
-            Text(viewModel.stateFullName() + viewModel.stateAge())
-        } header: {
-            Text("Result")
+            ProfileView(viewModel: ProfileViewModel())
         }
     }
 }
