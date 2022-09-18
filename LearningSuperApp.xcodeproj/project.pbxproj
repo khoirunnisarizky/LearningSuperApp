@@ -16,6 +16,7 @@
 		4E12347928D7232300DB8931 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12347828D7232300DB8931 /* LoginViewController.swift */; };
 		4E12347B28D724D000DB8931 /* DynamicOnBoardingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12347A28D724D000DB8931 /* DynamicOnBoardingVC.swift */; };
 		4E12347F28D725AA00DB8931 /* SwiftUIPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12347E28D725AA00DB8931 /* SwiftUIPreview.swift */; };
+		4E12348128D72C8700DB8931 /* OverlayOnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12348028D72C8700DB8931 /* OverlayOnBoardingView.swift */; };
 		4E41171728BC491400E80CC7 /* GenericTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E41171628BC491400E80CC7 /* GenericTableViewController.swift */; };
 		4E41172428BC6B5E00E80CC7 /* Mentors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E41172328BC6B5E00E80CC7 /* Mentors.swift */; };
 		4E8F8DEC28C0BB8A0006D38C /* MentorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8F8DEB28C0BB8A0006D38C /* MentorTableViewCell.swift */; };
@@ -42,6 +43,7 @@
 		4E12347828D7232300DB8931 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4E12347A28D724D000DB8931 /* DynamicOnBoardingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicOnBoardingVC.swift; sourceTree = "<group>"; };
 		4E12347E28D725AA00DB8931 /* SwiftUIPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPreview.swift; sourceTree = "<group>"; };
+		4E12348028D72C8700DB8931 /* OverlayOnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayOnBoardingView.swift; sourceTree = "<group>"; };
 		4E41171628BC491400E80CC7 /* GenericTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericTableViewController.swift; sourceTree = "<group>"; };
 		4E41172328BC6B5E00E80CC7 /* Mentors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mentors.swift; sourceTree = "<group>"; };
 		4E8F8DEB28C0BB8A0006D38C /* MentorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorTableViewCell.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 				4E12347028D720EC00DB8931 /* ProfileView.swift */,
 				4E12347228D7217900DB8931 /* ResultView.swift */,
 				4E12347628D722B800DB8931 /* LoginView.swift */,
+				4E12348028D72C8700DB8931 /* OverlayOnBoardingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				4E12347928D7232300DB8931 /* LoginViewController.swift in Sources */,
 				4E12347128D720EC00DB8931 /* ProfileView.swift in Sources */,
 				4E12347728D722B800DB8931 /* LoginView.swift in Sources */,
+				4E12348128D72C8700DB8931 /* OverlayOnBoardingView.swift in Sources */,
 				4E12347528D721B800DB8931 /* ProfileViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
