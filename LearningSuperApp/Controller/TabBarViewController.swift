@@ -11,9 +11,9 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.delegate = self
-        //Create tab for Chart page
+        
+        // MARK: - Create tab for Chart page
         let chartType = ["Bar", "Line", "Pie"]
         let chartTab = GenericTableViewController(items: chartType) { (cell: UITableViewCell, type) in
             cell.textLabel?.text = type
@@ -40,7 +40,7 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
         chartTab.navigationItem.title = "Chart"
         chartTab.navigationController?.navigationBar.prefersLargeTitles = true
         
-        //Create tab for Generic List
+        // MARK: - Create tab for Generic List
         let dataItems = Mentors().generateData()
         
         let genericListTab = GenericTableViewController(items: dataItems) { (cell: UITableViewCell, mentor) in
@@ -75,7 +75,24 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
         genericListTab.navigationItem.title = "Mentors List"
         genericListTab.navigationController?.navigationBar.prefersLargeTitles = true
         
-        self.viewControllers = [chartNavigation, genericNavigation]
+        // MARK: - Create tab for login page programmatically
+        let loginTab = LoginViewController()
+        let loginItem = UITabBarItem(title: "Login", image: UIImage(systemName: "person"), selectedImage: UIImage(systemName: "person.fill"))
+        let loginNavigation = UINavigationController(rootViewController: loginTab)
+        loginTab.tabBarItem = loginItem
+        loginTab.navigationItem.title = "Login"
+        loginTab.navigationController?.navigationBar.prefersLargeTitles = true
+        
+        
+        // MARK: - Create tab for Dynamic On Boarding Page
+        let dynamicOnBoardingTab = DynamicOnBoardingVC()
+        let dynamicOnBoardingItem = UITabBarItem(title: "On Boarding", image: UIImage(systemName: "character.bubble"), selectedImage: UIImage(systemName: "character.bubble.fill"))
+        let dynamicOnBoardingNavigation = UINavigationController(rootViewController: dynamicOnBoardingTab)
+        dynamicOnBoardingTab.tabBarItem = dynamicOnBoardingItem
+        dynamicOnBoardingTab.navigationItem.title = "On Boarding"
+        dynamicOnBoardingTab.navigationController?.navigationBar.prefersLargeTitles = true
+        
+        self.viewControllers = [chartNavigation, genericNavigation, loginNavigation, dynamicOnBoardingNavigation]
         
 
     }
