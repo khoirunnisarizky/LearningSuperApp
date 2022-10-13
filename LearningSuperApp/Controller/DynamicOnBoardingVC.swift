@@ -19,15 +19,23 @@ class DynamicOnBoardingVC: UIViewController {
     
     private lazy var bodyLabel: UILabel = {
         let bodyLbl = UILabel()
-        bodyLbl.text = "Here are different options to start your journey"
+        bodyLbl.text = "This place is not safe. You need two weapons below to help you attack your enemy."
+        bodyLbl.numberOfLines = 0
         bodyLbl.translatesAutoresizingMaskIntoConstraints = false
         return bodyLbl
     }()
     
-    private lazy var blueButton: UIButton = {
+    private lazy var spacer: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.heightAnchor.constraint(equalToConstant: 10).isActive = true
+        return view
+    }()
+    
+    private lazy var axeButton: UIButton = {
         let blueBtn = UIButton()
         blueBtn.backgroundColor = .blue
-        blueBtn.setTitle("Blue Pill", for: .normal)
+        blueBtn.setTitle("Axe", for: .normal)
         blueBtn.tintColor = .white
         blueBtn.layer.cornerRadius = 5
         blueBtn.clipsToBounds = true
@@ -35,10 +43,10 @@ class DynamicOnBoardingVC: UIViewController {
         return blueBtn
     }()
     
-    private lazy var redButton: UIButton = {
+    private lazy var gunButton: UIButton = {
         let redBtn = UIButton()
         redBtn.backgroundColor = .red
-        redBtn.setTitle("Red Pill", for: .normal)
+        redBtn.setTitle("Gun", for: .normal)
         redBtn.tintColor = .white
         redBtn.layer.cornerRadius = 5
         redBtn.clipsToBounds = true
@@ -47,7 +55,7 @@ class DynamicOnBoardingVC: UIViewController {
     }()
     
     private lazy var buttonStackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [redButton, blueButton])
+        let stackView = UIStackView(arrangedSubviews: [gunButton, axeButton])
         stackView.axis = .horizontal
         stackView.distribution = .fillProportionally
         stackView.spacing = 5
@@ -56,10 +64,10 @@ class DynamicOnBoardingVC: UIViewController {
     }()
     
     private lazy var stackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [titleLabel, bodyLabel, buttonStackView])
+        let stackView = UIStackView(arrangedSubviews: [titleLabel, bodyLabel, spacer, buttonStackView])
         stackView.axis = .vertical
-        stackView.distribution = .equalCentering
-        stackView.spacing = 5
+        stackView.distribution = .fill
+        stackView.spacing = 6
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
@@ -76,7 +84,7 @@ class DynamicOnBoardingVC: UIViewController {
             stackView.leftAnchor.constraint(equalTo:view.leftAnchor, constant: 20),
             stackView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -20),
             stackView.centerYAnchor.constraint(equalToSystemSpacingBelow: view.centerYAnchor, multiplier: 1),
-            stackView.heightAnchor.constraint(equalToConstant: view.bounds.size.height/8)
+            stackView.heightAnchor.constraint(equalToConstant: view.bounds.size.height/7)
         ])
         
     }
@@ -87,7 +95,7 @@ class DynamicOnBoardingVC: UIViewController {
     }
     
     func showFirstOverlay() {
-        let overlayView = OverlayOnBoardingView(title: "This is your last chance. After this there is no turning back. You take the blue pill, the story ends; you wake up in your bed and believe whatever you want to believe.", anchorView: blueButton)
+        let overlayView = OverlayOnBoardingView(title: "This is your last chance. After this there is no turning back. You take the axe, the story ends if that is not the right moment; you wake up in your bed and believe whatever you want to believe.", anchorView: axeButton)
         overlayView.frame = view.frame
         view.addSubview(overlayView)
         
@@ -101,7 +109,7 @@ class DynamicOnBoardingVC: UIViewController {
     }
     
     func showSecondOverlay() {
-        let overlayView = OverlayOnBoardingView(title: "You take the red pill, you stay in Wonderland and I show you how deep the rabbit hole goes.", anchorView: redButton)
+        let overlayView = OverlayOnBoardingView(title: "You take the gun, you could win. But if then you stay in Wonderland and I show you how deep the rabbit hole goes.", anchorView: gunButton)
         overlayView.frame = view.frame
         view.addSubview(overlayView)
         
