@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		335A52F6B47BC98B367F5128 /* Pods_LearningSuperApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC67652A74F1D973A600B97B /* Pods_LearningSuperApp.framework */; };
 		4E12344628D1A17700DB8931 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12344528D1A17700DB8931 /* TabBarViewController.swift */; };
 		4E12347128D720EC00DB8931 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12347028D720EC00DB8931 /* ProfileView.swift */; };
 		4E12347328D7217900DB8931 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E12347228D7217900DB8931 /* ResultView.swift */; };
@@ -31,10 +32,10 @@
 		4EF259862889102300A9BE26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF259842889102300A9BE26 /* Main.storyboard */; };
 		4EF259882889102500A9BE26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EF259872889102500A9BE26 /* Assets.xcassets */; };
 		4EF2598B2889102500A9BE26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF259892889102500A9BE26 /* LaunchScreen.storyboard */; };
-		65DC40713308E840BC5F3C2D /* Pods_LearningSuperApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D5B5C7566109E733D8B3972 /* Pods_LearningSuperApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EDFE6B81675B30875B2C1C8 /* Pods-LearningSuperApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningSuperApp.release.xcconfig"; path = "Target Support Files/Pods-LearningSuperApp/Pods-LearningSuperApp.release.xcconfig"; sourceTree = "<group>"; };
 		4E12344528D1A17700DB8931 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		4E12347028D720EC00DB8931 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4E12347228D7217900DB8931 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
@@ -60,9 +61,8 @@
 		4EF259872889102500A9BE26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EF2598A2889102500A9BE26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EF2598C2889102500A9BE26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D5B5C7566109E733D8B3972 /* Pods_LearningSuperApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningSuperApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		613B4027F23CFE2D3CEA9F02 /* Pods-LearningSuperApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningSuperApp.debug.xcconfig"; path = "Target Support Files/Pods-LearningSuperApp/Pods-LearningSuperApp.debug.xcconfig"; sourceTree = "<group>"; };
-		BE8A61D2CA736882B8DD745B /* Pods-LearningSuperApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningSuperApp.release.xcconfig"; path = "Target Support Files/Pods-LearningSuperApp/Pods-LearningSuperApp.release.xcconfig"; sourceTree = "<group>"; };
+		AC67652A74F1D973A600B97B /* Pods_LearningSuperApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LearningSuperApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9F2970E5D9032E7535ECBA2 /* Pods-LearningSuperApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LearningSuperApp.debug.xcconfig"; path = "Target Support Files/Pods-LearningSuperApp/Pods-LearningSuperApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E44D79728F7BE9D0070A24D /* Charts in Frameworks */,
-				65DC40713308E840BC5F3C2D /* Pods_LearningSuperApp.framework in Frameworks */,
+				335A52F6B47BC98B367F5128 /* Pods_LearningSuperApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +81,18 @@
 		0D9E3D5975F7AE75A61B70B3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				613B4027F23CFE2D3CEA9F02 /* Pods-LearningSuperApp.debug.xcconfig */,
-				BE8A61D2CA736882B8DD745B /* Pods-LearningSuperApp.release.xcconfig */,
+				F9F2970E5D9032E7535ECBA2 /* Pods-LearningSuperApp.debug.xcconfig */,
+				0EDFE6B81675B30875B2C1C8 /* Pods-LearningSuperApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		11F5B212CDDC2F1A1C8A637E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC67652A74F1D973A600B97B /* Pods_LearningSuperApp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		4E12346F28D7208A00DB8931 /* View Model */ = {
@@ -180,7 +188,7 @@
 				4EF2597D2889102300A9BE26 /* LearningSuperApp */,
 				4EF2597C2889102300A9BE26 /* Products */,
 				0D9E3D5975F7AE75A61B70B3 /* Pods */,
-				B1A743BD7C7112F2B3EC04FA /* Frameworks */,
+				11F5B212CDDC2F1A1C8A637E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -208,14 +216,6 @@
 			path = LearningSuperApp;
 			sourceTree = "<group>";
 		};
-		B1A743BD7C7112F2B3EC04FA /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5D5B5C7566109E733D8B3972 /* Pods_LearningSuperApp.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -223,7 +223,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4EF2598F2889102500A9BE26 /* Build configuration list for PBXNativeTarget "LearningSuperApp" */;
 			buildPhases = (
-				CE0CB11010BE14A19874E978 /* [CP] Check Pods Manifest.lock */,
+				6B1BC4971A365EF5A507BE89 /* [CP] Check Pods Manifest.lock */,
 				4EF259772889102300A9BE26 /* Sources */,
 				4EF259782889102300A9BE26 /* Frameworks */,
 				4EF259792889102300A9BE26 /* Resources */,
@@ -290,7 +290,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CE0CB11010BE14A19874E978 /* [CP] Check Pods Manifest.lock */ = {
+		6B1BC4971A365EF5A507BE89 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -480,7 +480,7 @@
 		};
 		4EF259902889102500A9BE26 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 613B4027F23CFE2D3CEA9F02 /* Pods-LearningSuperApp.debug.xcconfig */;
+			baseConfigurationReference = F9F2970E5D9032E7535ECBA2 /* Pods-LearningSuperApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -509,7 +509,7 @@
 		};
 		4EF259912889102500A9BE26 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE8A61D2CA736882B8DD745B /* Pods-LearningSuperApp.release.xcconfig */;
+			baseConfigurationReference = 0EDFE6B81675B30875B2C1C8 /* Pods-LearningSuperApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
