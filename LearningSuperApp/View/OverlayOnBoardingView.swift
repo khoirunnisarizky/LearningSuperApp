@@ -28,7 +28,7 @@ class OverlayOnBoardingView: UIView {
         let titleLabel = UILabel()
         titleLabel.font = UIFont.systemFont(ofSize: 12)
         titleLabel.text = title
-        titleLabel.textColor = .label
+        titleLabel.textColor = UIColor(named: "Color")
         titleLabel.isHidden = title.isEmpty
         titleLabel.numberOfLines = 0
         titleLabel.translatesAutoresizingMaskIntoConstraints = false

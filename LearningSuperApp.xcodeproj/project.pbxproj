@@ -26,6 +26,8 @@
 		4E93C3BE28891B3E00151262 /* PieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E93C3BD28891B3E00151262 /* PieViewController.swift */; };
 		4E93C3C028891B4B00151262 /* LineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E93C3BF28891B4B00151262 /* LineViewController.swift */; };
 		4E93C3C72890231B00151262 /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E93C3C52890231B00151262 /* User.xcdatamodeld */; };
+		4EDD8C7F2908DA3F0077BF1F /* ReusableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDD8C7E2908DA3F0077BF1F /* ReusableButton.swift */; };
+		4EDD8C812908DB150077BF1F /* ReusableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDD8C802908DB150077BF1F /* ReusableLabel.swift */; };
 		4EF2597F2889102300A9BE26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF2597E2889102300A9BE26 /* AppDelegate.swift */; };
 		4EF259812889102300A9BE26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF259802889102300A9BE26 /* SceneDelegate.swift */; };
 		4EF259832889102300A9BE26 /* BarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF259822889102300A9BE26 /* BarViewController.swift */; };
@@ -53,6 +55,8 @@
 		4E93C3BD28891B3E00151262 /* PieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieViewController.swift; sourceTree = "<group>"; };
 		4E93C3BF28891B4B00151262 /* LineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineViewController.swift; sourceTree = "<group>"; };
 		4E93C3C62890231B00151262 /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
+		4EDD8C7E2908DA3F0077BF1F /* ReusableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableButton.swift; sourceTree = "<group>"; };
+		4EDD8C802908DB150077BF1F /* ReusableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableLabel.swift; sourceTree = "<group>"; };
 		4EF2597B2889102300A9BE26 /* LearningSuperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningSuperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EF2597E2889102300A9BE26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4EF259802889102300A9BE26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				4E41171628BC491400E80CC7 /* GenericTableViewController.swift */,
+				4EDD8C7E2908DA3F0077BF1F /* ReusableButton.swift */,
+				4EDD8C802908DB150077BF1F /* ReusableLabel.swift */,
 			);
 			path = Themes;
 			sourceTree = "<group>";
@@ -265,7 +271,7 @@
 			);
 			mainGroup = 4EF259722889102300A9BE26;
 			packageReferences = (
-				4E44D79528F7BE9D0070A24D /* XCRemoteSwiftPackageReference "Charts.git" */,
+				4E44D79528F7BE9D0070A24D /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = 4EF2597C2889102300A9BE26 /* Products */;
 			projectDirPath = "";
@@ -321,6 +327,7 @@
 			files = (
 				4E41171728BC491400E80CC7 /* GenericTableViewController.swift in Sources */,
 				4EF259832889102300A9BE26 /* BarViewController.swift in Sources */,
+				4EDD8C7F2908DA3F0077BF1F /* ReusableButton.swift in Sources */,
 				4E12347328D7217900DB8931 /* ResultView.swift in Sources */,
 				4EF2597F2889102300A9BE26 /* AppDelegate.swift in Sources */,
 				4E93C3C028891B4B00151262 /* LineViewController.swift in Sources */,
@@ -331,6 +338,7 @@
 				4E8F8DEC28C0BB8A0006D38C /* MentorTableViewCell.swift in Sources */,
 				4E92F4FD2890F76700F0740D /* View3.swift in Sources */,
 				4E41172428BC6B5E00E80CC7 /* Mentors.swift in Sources */,
+				4EDD8C812908DB150077BF1F /* ReusableLabel.swift in Sources */,
 				4E12347F28D725AA00DB8931 /* SwiftUIPreview.swift in Sources */,
 				4E12344628D1A17700DB8931 /* TabBarViewController.swift in Sources */,
 				4E12347B28D724D000DB8931 /* DynamicOnBoardingVC.swift in Sources */,
@@ -560,7 +568,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		4E44D79528F7BE9D0070A24D /* XCRemoteSwiftPackageReference "Charts.git" */ = {
+		4E44D79528F7BE9D0070A24D /* XCRemoteSwiftPackageReference "Charts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/danielgindi/Charts.git";
 			requirement = {
@@ -573,7 +581,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		4E44D79628F7BE9D0070A24D /* Charts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 4E44D79528F7BE9D0070A24D /* XCRemoteSwiftPackageReference "Charts.git" */;
+			package = 4E44D79528F7BE9D0070A24D /* XCRemoteSwiftPackageReference "Charts" */;
 			productName = Charts;
 		};
 /* End XCSwiftPackageProductDependency section */
