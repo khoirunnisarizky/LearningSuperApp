@@ -8,7 +8,7 @@
 import UIKit
 
 class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.delegate = self
@@ -33,7 +33,7 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
         }
         
         let chartTabItem = UITabBarItem(title: "Chart", image: UIImage(systemName: "chart.bar.doc.horizontal"), selectedImage: UIImage(systemName: "chart.bar.doc.horizontal.fill"))
-
+        
         chartTab.tabBarItem = chartTabItem
         
         let chartNavigation = UINavigationController(rootViewController: chartTab)
@@ -99,9 +99,27 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
         webTab.tabBarItem = webItem
         webTab.navigationItem.title = "Connect to Web"
         webTab.navigationController?.navigationBar.prefersLargeTitles = true
-
+        
         
         self.viewControllers = [chartNavigation, genericNavigation, loginNavigation, dynamicOnBoardingNavigation, webNavigation]
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        
+        for tabBarItem in (self.tabBar.items)!{
+            let viewTabBar = tabBarItem.value(forKey: "view") as? UIView
+            viewTabBar?.frame.origin.y  = -15
+        }
+    }
+    
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tabBar.frame.size.height = 70
+        tabBar.frame.origin.y = view.frame.height - 65
+        tabBar.itemPositioning = .centered
     }
     
 }
