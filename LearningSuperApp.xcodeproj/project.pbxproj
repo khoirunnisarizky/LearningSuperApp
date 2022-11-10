@@ -26,6 +26,7 @@
 		4E93C3BE28891B3E00151262 /* PieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E93C3BD28891B3E00151262 /* PieViewController.swift */; };
 		4E93C3C028891B4B00151262 /* LineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E93C3BF28891B4B00151262 /* LineViewController.swift */; };
 		4E93C3C72890231B00151262 /* User.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4E93C3C52890231B00151262 /* User.xcdatamodeld */; };
+		4EBBA32C291C64EA00D95A7B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EBBA32B291C64EA00D95A7B /* WebViewController.swift */; };
 		4EDD8C7F2908DA3F0077BF1F /* ReusableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDD8C7E2908DA3F0077BF1F /* ReusableButton.swift */; };
 		4EDD8C812908DB150077BF1F /* ReusableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EDD8C802908DB150077BF1F /* ReusableLabel.swift */; };
 		4EF2597F2889102300A9BE26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF2597E2889102300A9BE26 /* AppDelegate.swift */; };
@@ -55,6 +56,7 @@
 		4E93C3BD28891B3E00151262 /* PieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieViewController.swift; sourceTree = "<group>"; };
 		4E93C3BF28891B4B00151262 /* LineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineViewController.swift; sourceTree = "<group>"; };
 		4E93C3C62890231B00151262 /* User.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = User.xcdatamodel; sourceTree = "<group>"; };
+		4EBBA32B291C64EA00D95A7B /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		4EDD8C7E2908DA3F0077BF1F /* ReusableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableButton.swift; sourceTree = "<group>"; };
 		4EDD8C802908DB150077BF1F /* ReusableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableLabel.swift; sourceTree = "<group>"; };
 		4EF2597B2889102300A9BE26 /* LearningSuperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearningSuperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +177,7 @@
 				4E12347C28D724DF00DB8931 /* Chart Controller */,
 				4E12347828D7232300DB8931 /* LoginViewController.swift */,
 				4E12347A28D724D000DB8931 /* DynamicOnBoardingVC.swift */,
+				4EBBA32B291C64EA00D95A7B /* WebViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				4E92F4FD2890F76700F0740D /* View3.swift in Sources */,
 				4E41172428BC6B5E00E80CC7 /* Mentors.swift in Sources */,
 				4EDD8C812908DB150077BF1F /* ReusableLabel.swift in Sources */,
+				4EBBA32C291C64EA00D95A7B /* WebViewController.swift in Sources */,
 				4E12347F28D725AA00DB8931 /* SwiftUIPreview.swift in Sources */,
 				4E12344628D1A17700DB8931 /* TabBarViewController.swift in Sources */,
 				4E12347B28D724D000DB8931 /* DynamicOnBoardingVC.swift in Sources */,

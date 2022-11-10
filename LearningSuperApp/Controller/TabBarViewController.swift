@@ -92,9 +92,16 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
         dynamicOnBoardingTab.navigationItem.title = "On Boarding"
         dynamicOnBoardingTab.navigationController?.navigationBar.prefersLargeTitles = true
         
-        self.viewControllers = [chartNavigation, genericNavigation, loginNavigation, dynamicOnBoardingNavigation]
-        
+        // MARK: - Create tab for WebKit
+        let webTab = WebViewController()
+        let webItem = UITabBarItem(title: "Connect", image: UIImage(systemName: "magnifyingglass.circle"), selectedImage: UIImage(systemName: "magnifyingglass.circle.fill"))
+        let webNavigation = UINavigationController(rootViewController: webTab)
+        webTab.tabBarItem = webItem
+        webTab.navigationItem.title = "Connect to Web"
+        webTab.navigationController?.navigationBar.prefersLargeTitles = true
 
+        
+        self.viewControllers = [chartNavigation, genericNavigation, loginNavigation, dynamicOnBoardingNavigation, webNavigation]
     }
     
 }
